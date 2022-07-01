@@ -6,3 +6,7 @@ $ npm init -y
 ```
 $ npm install chalk
 ```
+### Rodar o programa
+```
+$ node index.js
+```
