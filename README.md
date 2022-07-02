@@ -8,5 +8,5 @@ $ npm install chalk
 ```
 ### Rodar o programa
 ```
-$ node index.js
+$ node cli.js ./arquivos/texto1.md
 ```
