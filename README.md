@@ -10,3 +10,7 @@ $ npm install chalk
 ```
 $ node cli.js ./arquivos/texto1.md
 ```
+ou
+```
+$ npm run cli
+```
