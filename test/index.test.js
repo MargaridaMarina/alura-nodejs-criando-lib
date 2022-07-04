@@ -14,5 +14,9 @@ describe('pegaArquivo::', () => {
     const resultado = await pegaArquivo('/home/margo/code/alura-nodejs-criando-lib/test/arquivos/texto1.md')
     expect(resultado).toEqual(arrayResult)
   })
+  it('deve retornar mensagem "não há links"', async () => {
+    const resultado = await pegaArquivo('/home/margo/code/alura-nodejs-criando-lib/test/arquivos/texto1_semlinks.md')
+    expect(resultado).toBe('não há links')
+  })
 })
 
