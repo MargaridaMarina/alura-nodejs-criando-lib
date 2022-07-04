@@ -18,3 +18,7 @@ $ npm run cli validar
 ```
 $ npm install --save-dev jest
 ```
+### Rodando teste
+```
+$ npm run test
+```
