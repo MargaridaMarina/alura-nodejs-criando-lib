@@ -18,5 +18,11 @@ describe('pegaArquivo::', () => {
     const resultado = await pegaArquivo('/home/margo/code/alura-nodejs-criando-lib/test/arquivos/texto1_semlinks.md')
     expect(resultado).toBe('não há links')
   })
+  it('deve lançar um erro na falta de arquivo', () => {
+    async function capturaErro() {
+      await pegaArquivo('/home/margo/code/alura-nodejs-criando-lib/test/arquivos')
+      expect(capturaErro).toThrowError(/não há arquivo no caminho/)
+    }
+  })
 })
 
