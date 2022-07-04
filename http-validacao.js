@@ -1,13 +1,21 @@
 const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
 
+function manejaErros(erro) {
+  throw new Error(erro.message)
+}
+
 async function checaStatus(arrayURLs) {
-  const arrayStatus = await Promise
+  try{
+    const arrayStatus = await Promise
     .all(arrayURLs
       .map(async url => {
         const res = await fetch(url)
         return res.status
   }))
   return arrayStatus
+  } catch(erro) {
+    manejaErros(erro)
+  }
 }
 
 function geraArrayDeURLs(arrayLinks){
