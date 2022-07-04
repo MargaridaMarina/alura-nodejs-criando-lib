@@ -14,3 +14,7 @@ ou
 ```
 $ npm run cli validar
 ```
+### Instalando framework de testes Jest
+```
+$ npm install --save-dev jest
+```
